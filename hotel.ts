@@ -20,8 +20,8 @@ console.log(matrix)
 let sum = matrix.reduce((tota,current)=>
 {
     // @ts-ignore
-    let total = current.reduce((ar, tr) => ar + tr, 0);
+    let total = current.reduce((total, tr) => total + tr, 0);
 
-    return total + total
+    return tota + total
 },0)
 console.log(sum)
